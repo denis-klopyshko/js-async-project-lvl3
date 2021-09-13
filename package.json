@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Educational project after JS Async Programming Course",
   "type": "module",
+  "engines": {
+    "node": ">=14"
+  },
   "bin": {
     "page-loader": "src/bin/page-loader.js"
   },
@@ -22,7 +25,10 @@
   "homepage": "https://github.com/denis-klopyshko/js-async-project-lvl3#readme",
   "dependencies": {
     "axios": "^0.21.4",
-    "commander": "^8.2.0"
+    "commander": "^8.2.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jest": "^24.4.0"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
