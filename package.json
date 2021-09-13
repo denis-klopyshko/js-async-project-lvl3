@@ -1,0 +1,33 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "Educational project after JS Async Programming Course",
+  "type": "module",
+  "bin": {
+    "page-loader": "src/bin/page-loader.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "page-loader --output /var/tmp https://ru.hexlet.io/courses"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denis-klopyshko/js-async-project-lvl3.git"
+  },
+  "author": "Denis Klopyshko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denis-klopyshko/js-async-project-lvl3/issues"
+  },
+  "homepage": "https://github.com/denis-klopyshko/js-async-project-lvl3#readme",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "commander": "^8.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "jest": "^27.2.0",
+    "lodash": "^4.17.21",
+    "nock": "^13.1.3"
+  }
+}
