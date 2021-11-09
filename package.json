@@ -10,8 +10,8 @@
     "page-loader": "src/bin/page-loader.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "page-loader --output /var/tmp https://ru.hexlet.io/courses"
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "run": "page-loader -o /Users/denis.klopyshko/Documents/async https://guides.hexlet.io/"
   },
   "repository": {
     "type": "git",
@@ -25,15 +25,19 @@
   "homepage": "https://github.com/denis-klopyshko/js-async-project-lvl3#readme",
   "dependencies": {
     "axios": "^0.21.4",
+    "axios-debug-log": "^0.8.4",
+    "cheerio": "^1.0.0-rc.3",
     "commander": "^8.2.0",
+    "debug": "^4.3.2",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-jest": "^24.4.0"
+    "eslint-plugin-jest": "^24.4.0",
+    "listr": "^0.14.3",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
     "jest": "^27.2.0",
-    "lodash": "^4.17.21",
     "nock": "^13.1.3"
   }
 }

@@ -2,10 +2,13 @@ install:
 	npm install
 
 page-loader:
-	node src/bin/page-loader --output /var/tmp https://ru.hexlet.io/courses
+	 DEBUG=page-loader:* node src/bin/page-loader -o /Users/denis.klopyshko/Documents/async https://guides.hexlet.io/
 
 publish:
 	npm publish --dry-run
 
 lint:
 	npx eslint .
+
+test:
+	DEBUG=nock.scope:* npm test
